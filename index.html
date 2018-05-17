@@ -1,0 +1,119 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+	*{
+		margin: 0;
+	}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NICKIE官网</title>
+<link type="text/css" rel="stylesheet" href="css/index.css">
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<script src="js/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		var fn1 = function() {
+       	 	var w = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
+			var h = document.documentElement ? document.documentElement.clientHeight : document.body.clientHeight;
+			w = (w-300)/2;
+			h = (h-300)/2+20;
+			$("#indextc1").css("marginTop", h+"px");
+			$("#indextc1").css("marginLeft", w+"px");
+   		}
+    	if (navigator.userAgent.indexOf('iPad') == -1) {
+        	if (window.addEventListener) {
+            	window.addEventListener('resize', function() {
+                	fn1();
+            	});
+        	} else if (window.attachEvent) {
+            	window.attachEvent('onresize', function() {
+                	fn1();
+            	});
+        	}
+   	 	}
+    	fn1();
+    	$("#indexfs").hover(function(){
+       		$("#indexfs").html("产品展示"); 
+   		},function(){
+        	$("#indexfs").html("FASHION"); 
+    	});
+    	$("#indexst").hover(function(){
+       		$("#indexst").html("店铺信息"); 
+   		},function(){
+        	$("#indexst").html("STORES"); 
+    	});
+    	$("#indexab").hover(function(){
+       		$("#indexab").html("关于我们"); 
+   		},function(){
+        	$("#indexab").html("ABOUT"); 
+    	});
+	})
+</script>
+</head>
+<body>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href="css/turn.css" rel="stylesheet"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="turn/resize.js"></script>
+	<style>
+		*{
+			margin: 0;
+		}
+		.item_img img{
+			
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div name="m_pos" id="m_86981">
+	<link type="text/css" rel="stylesheet" href="turn/turn.css">
+
+<script>jQuery.noConflict();</script>
+<script language="javascript" type="text/javascript" src="turn/turn.js"></script>
+	<div id="posterMovieGrid86981"></div>
+
+	<script type="text/javascript">
+
+	var posterMovieGrid86981 = new posterMovieGrid({
+	parent: 'posterMovieGrid86981',
+	perpage: 1,
+	initnum: 1,
+	rect: 1190,
+	delay: 3000,
+	data: [
+		{"img":"turn/1.png", "title":"", "url":""},
+		{"img":"turn/2.png", "title":"", "url":""},
+		{"img":"turn/3.png", "title":"", "url":""}
+		],
+	hotcode: true});
+
+	</script>
+</div>
+</div>
+</body>
+</html>
+
+
+
+	
+	<div id="indextc1" style="background:url('images/dhbj.png') no-repeat;">
+		<div style="margin-top:200px;margin-left:-35px;">
+		<ul style="list-style-type:none;float:left">
+			<li class="indexli" style="width:100px;"><a href="fashion.php" class="indexdhlj" id="indexfs">FASHION</a></li>
+			<li class="indexli"><a href="stores.php" class="indexdhlj" id="indexst">STORES</a></li>
+			<li class="indexli"><a href="about.php" class="indexdhlj" id="indexab">ABOUT</a></li>
+		</ul>
+		</div>
+		<div style="clear:both;margin-top:40px;margin-left:90px;padding-top:20px;">
+			<img src="images/lianjie.png" width="26px" class="indexlj"/>
+			<img src="images/search.png" width="26px" style="margin-left:60px;" class="indexlj"/>
+		</div>
+	</div>
+  <audio src="images/music.mp3" autoplay="autoplay" loop="loop"></audio>
+</body>
+</html>
