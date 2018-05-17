@@ -1,119 +1,585 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<style>
-	*{
-		margin: 0;
-	}
-</style>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>NICKIE官网</title>
-<link type="text/css" rel="stylesheet" href="css/index.css">
-<link type="text/css" rel="stylesheet" href="css/main.css">
-<script src="js/jquery.js"></script>
-<script>
-	$(document).ready(function(){
-		var fn1 = function() {
-       	 	var w = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
-			var h = document.documentElement ? document.documentElement.clientHeight : document.body.clientHeight;
-			w = (w-300)/2;
-			h = (h-300)/2+20;
-			$("#indextc1").css("marginTop", h+"px");
-			$("#indextc1").css("marginLeft", w+"px");
-   		}
-    	if (navigator.userAgent.indexOf('iPad') == -1) {
-        	if (window.addEventListener) {
-            	window.addEventListener('resize', function() {
-                	fn1();
-            	});
-        	} else if (window.attachEvent) {
-            	window.attachEvent('onresize', function() {
-                	fn1();
-            	});
-        	}
-   	 	}
-    	fn1();
-    	$("#indexfs").hover(function(){
-       		$("#indexfs").html("产品展示"); 
-   		},function(){
-        	$("#indexfs").html("FASHION"); 
-    	});
-    	$("#indexst").hover(function(){
-       		$("#indexst").html("店铺信息"); 
-   		},function(){
-        	$("#indexst").html("STORES"); 
-    	});
-    	$("#indexab").hover(function(){
-       		$("#indexab").html("关于我们"); 
-   		},function(){
-        	$("#indexab").html("ABOUT"); 
-    	});
-	})
-</script>
-</head>
-<body>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<link href="css/turn.css" rel="stylesheet"/>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="turn/resize.js"></script>
-	<style>
-		*{
-			margin: 0;
-		}
-		.item_img img{
+		<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>七彩摇篮童装品牌官方网站</title>
+        <meta name="keywords" content="童装、鞋子、背包、配饰、母婴、亲子装、最新儿童用品LOOKBOOK">
+        <meta name="description" content="最新流行趋势，尽在超人气快时尚童装品牌七彩摇篮官网。包括了每周童装、鞋子、背包、配饰、母婴、亲子装等以及所有最新儿童用品LOOKBOOK。">	
+		<link rel="shortcut icon" href="/images/fav.ico?id=1" type="image/x-icon">		
+		<link rel="icon" href="images/fav.ico?id=1" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<![if !IE]>
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/nprogress.css">
+		<script src="js/nprogress.js"></script>
+        
+		<script>
+		$("document").ready(function(){
+			NProgress.start();
+			NProgress.done();
+		})	
+		</script>	
+		<script src="js/wow.min.js"></script>
+		<script>$(function(){new WOW().init();})</script>			
+		<![endif]>
+		<!--[if gt IE 8]> 
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/nprogress.css">
+		<script src="js/nprogress.js"></script>
+		<script>
+		$("document").ready(function(){
+			NProgress.start();
+			NProgress.done();
+		})		
+		</script>	
+		<script src="js/wow.min.js"></script>
+		<script>$(function(){new WOW().init();})</script>		
+		<![endif]--> 		
+		<!--[if lt IE 7]><script>window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script><![endif]-->
+	</head>
+	<body>
+		<!-- header -->
+		<div class="pr header wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+        	<div class="header-top">
+				<div class="container">
+					<p class="contry"><a href="/"><img src="images/index-1.jpg"></a><a href="/"><img src="images/index-2.jpg"></a><a href="/"><img src="images/index-3.jpg"></a></p>
+					<p class="login">         
+						<a class="trans-3" href="http://www.qcylkids.com/club.php" id="ewm_show" target="_blank">
+<img src="images/index-4.jpg">&nbsp;&nbsp;积分兑换</a>　|
+						<a class="trans-3" href="query.php">门店查询</a>　|
+						<a class="trans-3" href="contact.php">联系我们</a>
+					</p>
+                    
+				</div>
+            </div>
+                   
+			<div class="nav container" style="position:relative;">
+                 <a style="position:absolute; width:155px; height:70px; top:50px; left:0px;" href="/"></a>
+				<ul>                                     
+					
+					<li><a class="trans-3" href="series.php">新品系列</a></li>
+					<li><a class="trans-3" href="album.php">潮流专辑</a></li>
+					<li><a class="trans-3" href="store.php">店铺展示</a></li>
+					<li><a class="trans-3" href="story.php">品牌故事</a></li>
+					<li><a class="trans-3" href="investment.php">投资加盟</a></li>
+                    <li><a class="trans-3 last" href="club.php">会员俱乐部</a></li>
+				</ul>
 			
-		}
-	</style>
-</head>
-<body>
-<div>
-	<div name="m_pos" id="m_86981">
-	<link type="text/css" rel="stylesheet" href="turn/turn.css">
-
-<script>jQuery.noConflict();</script>
-<script language="javascript" type="text/javascript" src="turn/turn.js"></script>
-	<div id="posterMovieGrid86981"></div>
-
-	<script type="text/javascript">
-
-	var posterMovieGrid86981 = new posterMovieGrid({
-	parent: 'posterMovieGrid86981',
-	perpage: 1,
-	initnum: 1,
-	rect: 1190,
-	delay: 3000,
-	data: [
-		{"img":"turn/1.png", "title":"", "url":""},
-		{"img":"turn/2.png", "title":"", "url":""},
-		{"img":"turn/3.png", "title":"", "url":""}
-		],
-	hotcode: true});
-
-	</script>
-</div>
-</div>
-</body>
-</html>
-
-
-
-	
-	<div id="indextc1" style="background:url('images/dhbj.png') no-repeat;">
-		<div style="margin-top:200px;margin-left:-35px;">
-		<ul style="list-style-type:none;float:left">
-			<li class="indexli" style="width:100px;"><a href="fashion.php" class="indexdhlj" id="indexfs">FASHION</a></li>
-			<li class="indexli"><a href="stores.php" class="indexdhlj" id="indexst">STORES</a></li>
-			<li class="indexli"><a href="about.php" class="indexdhlj" id="indexab">ABOUT</a></li>
-		</ul>
+				<div class="fr hidden search-wrap">
+					<form action="" method="get">
+						<input class="search-input" type="text" value="请输入关键词" onfocus="if(this.value=='请输入关键词'){this.value=''}" onblur="if(this.value==''){this.value='请输入关键词'}">
+						<input class="search-btn trans-3" type="submit" value="">
+					</form>
+				</div>
+            </div>
+		</div><!-- /.header -->			 <div class="hidden container">
+         <div class="index-top slider-index2">
+          				<div><a href="javascript:;" title="1" target="_blank"><img src="upload/banner/bc914aba48568484d4002dd93c0c1c65.jpg"></a></div>                
+                				<div><a href="http://mp.weixin.qq.com/s?__biz=MzAxNjUzNDQ5OA==&mid=2661717463&idx=1&sn=09c8c0538347c3df6905327a25c9b318&scene=23&srcid=0804Rzx2IcAwUPMP2nyAMpbY#rd" title="2" target="_blank"><img src="upload/banner/8fba4e031c78cbaf3e7c5b0c8fd80833.jpg"></a></div>                
+                				<div><a href="http://v.qq.com/x/page/r0317torv1t.html" title="2" target="_blank"><img src="upload/banner/4f351942f67f0ec7e1e3329cd1721f92.jpg"></a></div>                
+                				<div><a href="http://www.qcylkids.com/details.php?class=24" title="童鞋" target="_blank"><img src="upload/banner/ef95b13a2fff15d81d53bb3fedde53b7.jpg"></a></div>                
+                				<div><a href="javascript:;" title="4" target="_blank"><img src="upload/banner/59b194aa59058360c773ce84c79f20c1.jpg"></a></div>                
+                                </div>
+			<div class="index-top wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">  
+                                  <a href="javascript:;" title="1" target="_blank"><img src="upload/banner/57a444ad1eb56.png"></a>
+                     				<!--<ul>
+					<li class="tl"><img src="images/index-9.jpg">&yen;49顺丰包邮</li>
+					<li class="tc"><img src="images/index-10.jpg">无理由退货</li>
+					<li class="tc"><img src="images/index-11.jpg">退货免运体验结束</li>
+					<li class="tr"><img src="images/index-12.jpg">电话客服时段变更</li>
+				</ul>-->
+				<div class="clear"></div>
+			</div>
+			<!-- 精选推荐 -->
+			<div class="index-title tc wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">&nbsp;&nbsp;&nbsp;<img src="images/index-34.jpg"><p>精选推荐</p></div>
+			<div class="index-slick wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=3" title="1"><img src="upload/banner/f0811e9a1bd35ec83d619f893ce76099.jpg" width="227" height="340" alt="1"></a></div>
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=3" title="2"><img src="upload/banner/298bbcd9a7e7efeea37184799950494c.jpg" width="227" height="340" alt="2"></a></div>
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=3" title="3"><img src="upload/banner/143937943b2ad9347406139f947b7374.jpg" width="227" height="340" alt="3"></a></div>
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=3" title="4"><img src="upload/banner/09f6546ea8d91855205f0e2c32dc3402.jpg" width="227" height="340" alt="4"></a></div>
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=3" title="5"><img src="upload/banner/245530062f10c7ac1a4698b229040d07.jpg" width="227" height="340" alt="5"></a></div>
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=23" title="6"><img src="upload/banner/d7a02783036a18349551e8f50d8b0266.jpg" width="227" height="340" alt="6"></a></div>
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=3" title="7"><img src="upload/banner/299cffad9f95fc2fd17a35da4c187385.jpg" width="227" height="340" alt="7"></a></div>
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=23" title="8"><img src="upload/banner/76c576f78fa170dd05fbfeaef4c73fc4.jpg" width="227" height="340" alt="8"></a></div>
+								<div class="item"><a href="http://www.qcylkids.com/series-details.php?id=3" title="9"><img src="upload/banner/a31771e5bd2dee242d0ae7d5317f038f.jpg" width="227" height="340" alt="9"></a></div>
+								<div class="item"><a href="category.php?class=26" title="10"><img src="upload/banner/b90efcc6e44915a4879436752f9e7af9.jpg" width="227" height="340" alt="10"></a></div>
+							</div>
+			<style>
+            .recom_span span{display:none;
+			 background:url(images/codebg.png); 
+			 height:100%; 
+			 position:absolute; 
+			 z-index:9999;
+			 bottom:0; 
+			 width:100%; 
+			 text-align:center; 
+			 font-weight:bold; 
+			 color:#FFF; }
+			 .recom_span a{ color:#FFF;}
+			 .recom_span dl{
+				 top:50%; 
+				 margin-top:-40px; 
+				 height:80px; 
+				 position:absolute; 
+				 text-align:center; 
+				 width:100%;
+				 font-size:24px;
+			 }
+            </style>
+			<!-- 新品推荐 -->
+			<div class="index-title tc wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">&nbsp;&nbsp;&nbsp;<img src="images/a13.png"><p>本季优选</p></div>
+			<div class="pr hidden newspro wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+								<div class="pa hidden li1 recom_span" >
+                    <a href="category.php?class=26" title="新品推荐">
+                        <img class="trans-12" src="upload/banner/1688fa79cce75da142a3af710eec3535.jpg" alt="新品推荐">
+                    </a>
+                                        <span  >
+                    <a href="category.php?class=26" title="新品推荐">
+                    <dl style=" ">
+                        <dt>NEW ICONS</dt>
+                        <dd>新品推荐</dd>
+                        </dl>
+                        </a>
+                    </span>
+                                    </div>
+								<div class="pa hidden li2 recom_span" >
+                    <a href="category.php?class=27" title="童鞋">
+                        <img class="trans-12" src="upload/banner/e258a041bdeb5731a994aed2c1971f6b.jpg" alt="童鞋">
+                    </a>
+                                        <span  >
+                    <a href="category.php?class=27" title="童鞋">
+                    <dl style=" ">
+                        <dt>UNDERWEAR</dt>
+                        <dd>童鞋</dd>
+                        </dl>
+                        </a>
+                    </span>
+                                    </div>
+								<div class="pa hidden li3 recom_span" >
+                    <a href="category.php?class=28" title="配饰">
+                        <img class="trans-12" src="upload/banner/5b79146d5bcfdc3a7d3a40059bca372b.jpg" alt="配饰">
+                    </a>
+                                        <span  >
+                    <a href="category.php?class=28" title="配饰">
+                    <dl style=" ">
+                        <dt>BABY</dt>
+                        <dd>配饰</dd>
+                        </dl>
+                        </a>
+                    </span>
+                                    </div>
+								<div class="pa hidden li4 recom_span" >
+                    <a href="category.php?class=29" title="女童装">
+                        <img class="trans-12" src="upload/banner/805369379587a366b54fd2fe39767102.jpg" alt="女童装">
+                    </a>
+                                        <span  >
+                    <a href="category.php?class=29" title="女童装">
+                    <dl style=" ">
+                        <dt>SHOES</dt>
+                        <dd>女童装</dd>
+                        </dl>
+                        </a>
+                    </span>
+                                    </div>
+								<div class="pa hidden li5 recom_span" >
+                    <a href="category.php?class=30" title="男童装">
+                        <img class="trans-12" src="upload/banner/ecc5c5f40d37ff0ec733ea0346a465cc.jpg" alt="男童装">
+                    </a>
+                                        <span  >
+                    <a href="category.php?class=30" title="男童装">
+                    <dl style=" ">
+                        <dt>JEANS</dt>
+                        <dd>男童装</dd>
+                        </dl>
+                        </a>
+                    </span>
+                                    </div>
+								<div class="pa hidden li6 recom_span" >
+                    <a href="category.php?class=31" title="新品上市">
+                        <img class="trans-12" src="upload/banner/1d07d975194159997622a55be8e24b73.jpg" alt="新品上市">
+                    </a>
+                                        <span  >
+                    <a href="category.php?class=31" title="新品上市">
+                    <dl style=" ">
+                        <dt>ACCESSORIES</dt>
+                        <dd>新品上市</dd>
+                        </dl>
+                        </a>
+                    </span>
+                                    </div>
+								<div class="pa hidden li7 recom_span" >
+                    <a href="category.php?class=32" title="人气精品">
+                        <img class="trans-12" src="upload/banner/d502335983e84ec0478ae535b6548386.jpg" alt="人气精品">
+                    </a>
+                                        <span  >
+                    <a href="category.php?class=32" title="人气精品">
+                    <dl style=" ">
+                        <dt>OUTERWEAR</dt>
+                        <dd>人气精品</dd>
+                        </dl>
+                        </a>
+                    </span>
+                                    </div>
+								<div class="pa hidden li8 recom_span" >
+                    <a href="category.php?class=31" title="婴童系列">
+                        <img class="trans-12" src="upload/banner/e50d642c489a134dac929249068ede61.jpg" alt="婴童系列">
+                    </a>
+                                        <span  >
+                    <a href="category.php?class=31" title="婴童系列">
+                    <dl style=" ">
+                        <dt>BAGS</dt>
+                        <dd>婴童系列</dd>
+                        </dl>
+                        </a>
+                    </span>
+                                    </div>
+							</div>	
+			
+			<!-- 优惠特选 -->
+			<div class="index-title tc wow fadeInDown">&nbsp;&nbsp;&nbsp;<img src="images/index-13.jpg"><p>优惠特选</p></div>
+			<div class="hidden preferential wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+				<div class="pr hidden prebox">
+										<div class="pa hidden li1">
+						<a href="category.php?class=26" title="潮T精选" target="_blank">
+							<div class="hidden imgbox"><img class="trans-12" src="upload/banner/76e250e68e562e5b9a256b1d10d33bd5.jpg" alt="潮T精选"></div>
+							<div class="hidden text">
+								<p class="ellipsis tit">潮T精选</p>
+								<p class="price" style="letter-spacing:2px;"><span class="ff-ar " style="font-size:24px;">¥99</span>起</p>
+							</div>
+						</a>
+					</div>
+										<div class="pa hidden li2">
+						<a href="category.php?class=26" title="宝宝系列" target="_blank">
+							<div class="hidden imgbox"><img class="trans-12" src="upload/banner/4caccd8e30bd8ce73f62b4bfa44e578c.jpg" alt="宝宝系列"></div>
+							<div class="hidden text">
+								<p class="ellipsis tit">宝宝系列</p>
+								<p class="price" style="letter-spacing:2px;"><span class="ff-ar " style="font-size:24px;">¥49</span>起</p>
+							</div>
+						</a>
+					</div>
+										<div class="pa hidden li3">
+						<a href="category.php?class=26" title="童鞋系列" target="_blank">
+							<div class="hidden imgbox"><img class="trans-12" src="upload/banner/ae6a4533c9d3c0c2ae9f4b17277e6e77.jpg" alt="童鞋系列"></div>
+							<div class="hidden text">
+								<p class="ellipsis tit">童鞋系列</p>
+								<p class="price" style="letter-spacing:2px;"><span class="ff-ar " style="font-size:24px;">¥49</span>起</p>
+							</div>
+						</a>
+					</div>
+										<div class="pa hidden li4">
+						<a href="category.php?class=26" title="女童上衣" target="_blank">
+							<div class="hidden imgbox"><img class="trans-12" src="upload/banner/32634c635dbfca619a7a32fb1e930689.jpg" alt="女童上衣"></div>
+							<div class="hidden text">
+								<p class="ellipsis tit">女童上衣</p>
+								<p class="price" style="letter-spacing:2px;"><span class="ff-ar " style="font-size:24px;">¥59</span>起</p>
+							</div>
+						</a>
+					</div>
+										<div class="pa hidden li5">
+						<a href="category.php?class=26" title="女童裙装" target="_blank">
+							<div class="hidden imgbox"><img class="trans-12" src="upload/banner/75c567447fc25e2d2820eeec41ace19f.jpg" alt="女童裙装"></div>
+							<div class="hidden text">
+								<p class="ellipsis tit">女童裙装</p>
+								<p class="price" style="letter-spacing:2px;"><span class="ff-ar " style="font-size:24px;">¥9</span>起</p>
+							</div>
+						</a>
+					</div>
+										<div class="pa hidden li6">
+						<a href="category.php?class=26" title="裤吧系列" target="_blank">
+							<div class="hidden imgbox"><img class="trans-12" src="upload/banner/69b7f831116aa7ad6bf6425c90a75b7a.jpg" alt="裤吧系列"></div>
+							<div class="hidden text">
+								<p class="ellipsis tit">裤吧系列</p>
+								<p class="price" style="letter-spacing:2px;"><span class="ff-ar " style="font-size:24px;">¥29</span>起</p>
+							</div>
+						</a>
+					</div>
+										<div class="pa hidden li7">
+						<a href="category.php?class=26" title="女裤系列" target="_blank">
+							<div class="hidden imgbox"><img class="trans-12" src="upload/banner/9275d310995d669b66d40d7328386314.jpg" alt="女裤系列"></div>
+							<div class="hidden text">
+								<p class="ellipsis tit">女裤系列</p>
+								<p class="price" style="letter-spacing:2px;"><span class="ff-ar " style="font-size:24px;">¥9</span>起</p>
+							</div>
+						</a>
+					</div>
+										<div class="pa hidden li8">
+						<a href="category.php?class=26" title="配件系列" target="_blank">
+							<div class="hidden imgbox"><img class="trans-12" src="upload/banner/0c8122bb6a42300b22a96843eb3a4d8f.jpg" alt="配件系列"></div>
+							<div class="hidden text">
+								<p class="ellipsis tit">配件系列</p>
+								<p class="price" style="letter-spacing:2px;"><span class="ff-ar " style="font-size:24px;">¥29</span>起</p>
+							</div>
+						</a>
+					</div>
+									</div>		
+                				<div class="bigpic"><a href="index.php" title="1"><img src="upload/banner/67e893c3a1f684da4b3be15e7da836e5.jpg" alt="1"></a></div>
+                				<ul >
+										<li><a href="/story.php" title="品牌故事"><img src="images/index-31.jpg"><div class="pa filterbox" style="display:none;"><span>品牌故事</span></div></a></li>
+										<li><a href="/series.php" title="设计理念"><img src="images/index-32.jpg"><div class="pa filterbox" style="display:none;"><span>设计理念</span></div></a></li>
+										<li><a href="/store.php" title="终端形象"><img src="upload/banner/6d3f1788da1e628991b36f8b24fab17d.jpg"><div class="pa filterbox" style="display:none;"><span>终端形象</span></div></a></li>
+									</ul>
+				<div class="clear" style="margin-bottom:120px; display:block;"></div>
+			</div>		
+		 </div>		
+				<!-- footer -->
+		<div class="hidden featured" style="background-image: url(images/index-91.jpg)">
+			<div class="container tc"><img src="images/midao_pic1.png"></div>
 		</div>
-		<div style="clear:both;margin-top:40px;margin-left:90px;padding-top:20px;">
-			<img src="images/lianjie.png" width="26px" class="indexlj"/>
-			<img src="images/search.png" width="26px" style="margin-left:60px;" class="indexlj"/>
-		</div>
-	</div>
-  <audio src="images/music.mp3" autoplay="autoplay" loop="loop"></audio>
-</body>
+		<div class="hidden footer wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+			<div class="container">
+				<div class="fl left">
+					<form action="" method="post">
+						<span class="ft-18">获取七彩摇篮最新资讯</span>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input class="required" id="ajax_mail" type="email" value="请输入你的邮箱地址" onfocus="if(this.value=='请输入你的邮箱地址'){this.value=''}" onblur="if(this.value==''){this.value='请输入你的邮箱地址'}">
+						&nbsp;&nbsp;<input class="hand" type="button" value="马上订阅 >" id="ajax_dy">
+					</form>
+					<ul> 
+						
+						<li><p>关注官方微信</p>
+								<img src="upload/dd0077234dc2d70af84c1c0f48eac0b6.png" width="80"> 
+						</li>
+						<li class="last"><p>关注官方微博</p><a  target="_blank" href="http://weibo.com/u/5676264613?refer_flag=1001030201_&is_all=1"><img src="images/sina.png"></a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="fr right">
+					<ul>
+                    						<li>
+							<span>关于我们</span>
+                                                <a class="trans-3" target="_blank" href="info.php?class=8" title="集团简介">集团简介</a>
+                                                        <a class="trans-3" target="_blank" href="story.php" title="品牌故事">品牌故事</a>
+                                                        <a class="trans-3" target="_blank" href="job.php" title="工作机会">工作机会</a>
+                                                        <a class="trans-3" target="_blank" href="contact.php" title="联系我们">联系我们</a>
+                                                        <a class="trans-3" target="_blank" href="info.php?class=12" title="法律声明 ">法律声明 </a>
+                                    	
+						</li>
+                  						<li>
+							<span>品牌动态</span>
+                                                <a class="trans-3" target="_blank" href="/series.php" title="品牌画册">品牌画册</a>
+                                                        <a class="trans-3" target="_blank" href="/album.php" title="最新资讯">最新资讯</a>
+                                                        <a class="trans-3" target="_blank" href="info.php?class=16" title="企业文化">企业文化</a>
+                                    	
+						</li>
+                  						<li>
+							<span>招商加盟</span>
+                                                <a class="trans-3" target="_blank" href="join.php" title="加盟申请">加盟申请</a>
+                                                        <a class="trans-3" target="_blank" href="store.php" title="终端形象">终端形象</a>
+                                                        <a class="trans-3" target="_blank" href="query.php" title="门店查询">门店查询</a>
+                                                        <a class="trans-3" target="_blank" href="investment.php" title="营销政策">营销政策</a>
+                                                        <a class="trans-3" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2787707243&site=qq&menu=yestencent://message/?uin=2787707243&Site=&Menu=yes" title="在线留言 ">在线留言 </a>
+                                    	
+						</li>
+                  						<li>
+							<span>会员专享</span>
+                                                <a class="trans-3" target="_blank" href="http://qcyl.fxtsoft.com/VistantApply.aspx?CompanyId=0@VisitantId=@WxId=oqMPk1f0oieuUPJ7UrUiiTcNjtCk" title="申请会员">申请会员</a>
+                                                        <a class="trans-3" target="_blank" href="club.php" title="会员权益">会员权益</a>
+                                                        <a class="trans-3" target="_blank" href="details.php?class=24" title="礼券兑换">礼券兑换</a>
+                                                        <a class="trans-3" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzAxNjUzNDQ5OA==&mid=210367103&idx=1&sn=e2601b9e4d5575e24e12a110dcf620df#rd" title="积分查询">积分查询</a>
+                                    	
+						</li>
+                        
+											
+					</ul>
+					<div class="clear"></div>
+					<div class="tel ft-18">全国客户服务电话<br><span class="ff-ar ft-34">400-6868-690</span></div>
+				</div>
+				<div class="clear"></div>	
+				<div class="hidden copyright tc">Copyright © 2016 Colorful Cradle Inc.保留所有权利。 <br>七彩摇篮品牌运营中心 闽公网安12345678912号 闽ICP备20150308号 </div>
+			</div>
+		</div><!-- /.footer -->
+        <div id="ewmwx"  style=" display:none; width:200px; height:200px; position:absolute; top:45px; left:50%; margin-left:230px; background:#FFF;"><img  src="upload/dd0077234dc2d70af84c1c0f48eac0b6.png" /></div>
+        <style>
+        .huudon-float {
+    height: 374px;
+    margin-top: -187px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 74px;
+    z-index: 50;
+}
+.huudon-float li {
+    background: #ea3846 none repeat scroll 0 0;
+    color: #fff;
+    height: 74px;
+    line-height: 27px;
+    margin-bottom: 1px;
+    position: relative;
+    text-align: center;
+    width: 84px;
+}
+.huudon-float li.hidden {
+    overflow: hidden;
+}
+.huudon-float li a.tit {
+    background-image: url("../images/huudon_float.png");
+    background-position: center -80px;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: block;
+    height: 74px;
+    padding-top: 42px;
+    width: 74px;
+}
+.huudon-float li:nth-of-type(1) {
+    background-color: transparent;
+}
+.huudon-float li:nth-of-type(1) a {
+    background-position: center 0;
+    height: 82px;
+}
+.huudon-float li:nth-of-type(2) a {
+    background-position: center -86px;
+}
+.huudon-float li:nth-of-type(3) a {
+    background-position: center -162px;
+}
+.huudon-float li:nth-of-type(4) {
+    background: #ea3846 url("../images/huudon_float.png") repeat scroll 0 -242px;
+}
+.huudon-float li:nth-of-type(5) a {
+    background-position: center -310px;
+}
+.huudon-float li p {
+    cursor: pointer;
+    height: 27px;
+    padding-top: 42px;
+    position: relative;
+    z-index: 2;
+}
+.huudon-float li .tel {
+    background: #ea3846 none repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    font: 24px/74px Arial;
+    height: 74px;
+    left: 74px;
+    position: absolute;
+    top: 0;
+    width: 184px;
+    z-index: 1;
+}
+        </style>
+        <div class="hidden-md hidden-sm hidden-xs huudon-float">
+        <ul>
+            <li class="hidden gotop"><a href="javascript:;" class="tit"></a></li>
+            <li class="style1 hidden" style="margin-left: 0px;"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2076709126&amp;site=qq&amp;menu=yestencent://message/?uin=2076709126&amp;Site=&amp;Menu=yes" target="_blank" class="tit">加盟咨询</a></li>
+            <li class="hidden style3"><a href="join.php" class="tit" style=" height:44px;">申请加盟</a></li>
+            <li class="hidden style2"><p>联系电话</p><div class="tel">400-6868-690</div></li>
+            <li class="hidden style1"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2194451186&amp;site=qq&amp;menu=yestencent://message/?uin=2194451186&amp;Site=&amp;Menu=yes" target="_blank" class="tit">投诉留言</a></li>
+        </ul>
+    </div>
+        
+
+        <script>
+            $(function(){
+			    $("#ajax_dy").click(function(){
+				    $.ajax({
+						type: "POST",
+						url: "ajax_dy.php",
+						data: {"mail":$("#ajax_mail").val()},
+						dataType: "json",
+						success:function(data,status){
+							if(data.state){
+							    alert("预订成功！")	;
+							}else{
+								alert("您已预定过！")	;
+							}
+							
+						}
+					})	
+				})
+				$("#ewm_show").hover(function(){
+					$("#ewmwx").fadeIn()
+				},function(){
+					$("#ewmwx").fadeOut()
+				})
+				
+				$(".recom_span").hover(function(){
+					$(this).find("span").fadeIn()
+				},function(){
+					$(this).find("span").fadeOut()
+				})
+				
+				//悬浮框
+		$(".huudon-float li.style2").hover(function(){ 
+			var _this = $(this);
+			_this.removeClass("hidden").stop().animate({left : - 184}, 400)
+		}, function(){
+			var _this = $(this);
+			_this.stop().animate({left : 0}, 400, function(){
+				_this.addClass("hidden")
+			})
+		})
+		
+		$(".huudon-float li.style3").hover(function(){ 
+			$(this).removeClass("hidden").stop().animate({marginLeft : - 10}, 400)
+		}, function(){
+			var _this = $(this);
+			_this.stop().animate({marginLeft : 0}, 400, function(){
+				_this.addClass("hidden")
+			})
+		})
+		
+		$(".huudon-float li.style1").hover(function(){
+			$(this).removeClass("hidden").stop().animate({marginLeft : - 10}, 400)
+		}, function(){
+			var _this = $(this);
+			_this.stop().animate({marginLeft : 0}, 400, function(){
+				_this.addClass("hidden")
+			})
+		})	
+		$(".gotop").click(function(){
+			$("html,body").stop().animate({scrollTop: "0"},600)
+		})
+			})
+			
+			
+        </script>	
+		<link rel="stylesheet" type="text/css" href="slick/slick.css">
+		<style>
+		.index-slick .slick-slider{margin-bottom: 0;}
+		.index-slick .slick-list{margin: 0 auto;}
+		.index-slick .slick-prev, .slick-next{width: 26px; height: 26px; background: url(images/arrows_sm.png) no-repeat;}
+		.index-slick .slick-prev{left: 6px; background-position: 4px 0;}
+		.index-slick .slick-next{right: 6px; background-position: -30px 0;}
+		.index-slick .slick-prev:before, .slick-next:before{font-size: 0; opacity: 1;}		
+		.slider-index2{ margin-top:10px;}
+.slider-index2 img{ width:1179px;; height:608px; float:left; }
+.slider-index2 .slick-dots{ bottom: 45px; left:530px; }
+.slider-index2 .slick-dots li{ width:18px; height:12px; background:url(/images/kr_05.png);}
+.slider-index2 .slick-dots li .slick-active{  background:url();}
+.slider-index2 .slick-dots li.slick-active button:before{  background:url(/images/kr_06.png); height:12px; }
+		</style>
+		<script src="slick/slick.js"></script>	
+		<script>
+		$(function(){
+			$(".index-slick").slick({
+				slidesToShow: 5,
+				slidesToScroll: 5,
+				autoplay: true,
+				autoplaySpeed: 5000,
+				lazyLoad: "progressive",
+				draggable: false
+			})
+			$('.slider-index2').slick({
+				slidesToScroll: 1,
+				autoplay:true,
+				arrows:false,
+				dots:true,
+			});
+			
+			$(".preferential ul li").hover(function(){
+				$(this).find(".filterbox").stop().fadeIn(500)
+			},function(){
+				$(this).find(".filterbox").stop().fadeOut(500)
+				
+			})
+		})
+		</script>
+	</body>
 </html>
